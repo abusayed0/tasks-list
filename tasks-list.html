@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks List</title>
+    <style>
+        .task{
+            background-color:lightblue;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        #task-name{
+            width: 80%;
+        }
+        #btn-container{
+            width: 20%;
+            text-align: end;
+        }
+        form{
+            margin-top: 80px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        #new-task{
+            width: 50%;
+            height: 200px;
+            resize: none;
+            padding: 20px 10px;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+       <h1> All Tasks : </h1>
+        <div id="tasks-container">
+            <div class="task">
+                <p id="task-name">Task-1 : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, eius?</p>
+                <div id="btn-container">
+                    <button id="btn-done">Done</button>
+                    <button id="btn-remove">Remove</button>
+                </div>
+            </div>
+            <div class="task">
+                <p id="task-name">Task-2 : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, eius?</p>
+                <div id="btn-container">
+                    <button id="btn-done">Done</button>
+                    <button id="btn-remove">Remove</button>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <form>
+        <textarea name="" id="new-task" placeholder="Write about new task"></textarea>
+        <button id="btn-add-new-task">Add</button>
+    </form>
+    <script src="js/tasks-list.js"></script>
+</body>
+</html>
